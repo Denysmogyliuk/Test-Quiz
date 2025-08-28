@@ -29,15 +29,6 @@ export type IAnswers = {
   [questionId: string]: string | string[]
 }
 
-export interface IQuizContext {
-  answers: IAnswers
-  clearAnswers: () => void
-  isLoading: boolean
-  loadQuizzes: () => Promise<void>
-  quizzes: IQuizItem[]
-  setAnswers: (answers: IAnswers) => void
-}
-
 export interface IQuizFlowContext {
   ableNextButton: boolean
   answers: IAnswers

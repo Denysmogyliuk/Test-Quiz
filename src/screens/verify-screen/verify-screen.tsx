@@ -6,8 +6,7 @@ import { useEffect, useRef, useState } from 'react'
 import styles from './verify-screen.module.css'
 import { useLocalizedRouter } from '@/hooks/use-localized-router'
 import { useQuizContext } from '@/context/quiz-context/quiz-context'
-
-const TIMEOUT = 5000
+import { REDIRECT_DELAY, VERIFY_SCREEN_TIMEOUT } from '@/constants'
 
 export const VerifyScreen: React.FC = () => {
   const [progress, setProgress] = useState(0)
@@ -22,7 +21,7 @@ export const VerifyScreen: React.FC = () => {
     const start = performance.now()
 
     const loop = (t: number) => {
-      const p = Math.min(1, (t - start) / TIMEOUT)
+      const p = Math.min(1, (t - start) / VERIFY_SCREEN_TIMEOUT)
       setProgress(Math.floor(p * 100))
       if (p < 1) timeoutRef.current = requestAnimationFrame(loop)
     }
@@ -31,7 +30,7 @@ export const VerifyScreen: React.FC = () => {
 
     const timer = setTimeout(() => {
       router.replace('/email')
-    }, TIMEOUT + 300)
+    }, VERIFY_SCREEN_TIMEOUT + REDIRECT_DELAY)
 
     return () => {
       if (timeoutRef.current) cancelAnimationFrame(timeoutRef.current)
@@ -39,7 +38,7 @@ export const VerifyScreen: React.FC = () => {
     }
   }, [])
 
-  // TODO: add request for results
+  // TODO: add request for results getting
 
   const size = 280
   const strokeWidth = 18

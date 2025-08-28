@@ -13,3 +13,7 @@ export const THEME_COOKIE_NAME = 'theme'
 export const THEME_COOKIE_MAX_AGE_SECONDS = 60 * 60 * 24 * 365 // one year
 export const THEME_DARK_MEDIA_QUERY = '(prefers-color-scheme: dark)'
 export const DATA_THEME_ATTRIBUTE = 'data-theme'
+
+export const REDIRECT_DELAY = 400
+
+export const VERIFY_SCREEN_TIMEOUT = 5000

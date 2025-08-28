@@ -2,15 +2,12 @@
 
 import { createContext, useContext, useEffect, useRef, useState } from 'react'
 import { getLocale } from '@/helpers/get-locale'
-
-import { QUIZ_STORAGE_KEY } from '@/constants'
+import { IQuizFlowContext, IQuizItem, IQuizTransition } from './types'
+import { QUIZ_STORAGE_KEY, REDIRECT_DELAY } from '@/constants'
 import { QuizTypes } from '@/components/quiz-card'
 import { useLocalizedRouter } from '@/hooks/use-localized-router'
 import { useParams } from 'next/navigation'
 import { useQuizContext } from '@/context/quiz-context/quiz-context'
-import { IQuizFlowContext, IQuizItem, IQuizTransition } from './types'
-
-const REDIRECT_DELAY = 500
 
 const QuizFlowContext = createContext<IQuizFlowContext | undefined>(undefined)
 
@@ -118,8 +115,12 @@ export const QuizFlowProvider: React.FC<{ children: React.ReactNode }> = ({
 
   const handleChange = (value: string | string[]) => {
     if (!question) return
-    const idToIndex = new Map(flow.map((q, i) => [q.id, i] as const))
+    const idToIndex = new Map(
+      flow.map((quiz, index) => [quiz.id, index] as const)
+    )
+
     const nextAnswers = { ...answers, [question.id]: value }
+
     for (const key of Object.keys(nextAnswers)) {
       const idx = idToIndex.get(key)
       if (idx !== undefined && idx > step) {
