@@ -1,8 +1,9 @@
+import { I18n } from '@lingui/core'
 import { IAnswers } from './types'
 import { IQuizItem } from '@/context/quiz-context/types'
-import { QuizTypes } from '@/components/quiz-card/types'
-import { I18n } from '@lingui/core'
 import { LANGUAGE_NAMES } from '@/constants'
+import { QuizTypes } from '@/components/quiz-card/types'
+import { stripHighlighting } from '@/helpers/render-highlighted'
 import { t } from '@lingui/core/macro'
 
 export const getAnswerLabel = (
@@ -64,7 +65,12 @@ export const downloadFile = (
   answered.forEach((quiz, idx) => {
     const answer = String(getAnswerLabel(quiz, answers[quiz.id]))
     rows.push(
-      [String(idx + 1), quiz.question, String(quiz.type), answer]
+      [
+        String(idx + 1),
+        stripHighlighting(quiz.question),
+        String(quiz.type),
+        answer,
+      ]
         .map(escapeCsv)
         .join(',')
     )
@@ -78,16 +84,4 @@ export const downloadFile = (
   a.download = `quiz-results.csv`
   a.click()
   URL.revokeObjectURL(url)
-}
-
-export const sendEmail = (answers: IAnswers, quizzes: IQuizItem[]) => {
-  const subject = encodeURIComponent('Quiz results')
-  const body = encodeURIComponent(
-    quizzes
-      .map(
-        (quiz) => `${quiz.question}: ${getAnswerLabel(quiz, answers[quiz.id])}`
-      )
-      .join('\n')
-  )
-  window.location.href = `mailto:?subject=${subject}&body=${body}`
 }

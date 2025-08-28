@@ -6,6 +6,7 @@ export const quizMocks = {
       id: 'qlang',
       type: 'language',
       question: 'Select language',
+      description: 'Choose interface language',
       options: [
         { value: 'en', label: 'English' },
         { value: 'es', label: 'Español' },
@@ -18,6 +19,7 @@ export const quizMocks = {
       id: 'qt1',
       type: 'tile',
       question: 'Select your <gender>',
+      description: 'We use this to personalize your quiz',
       options: [
         { value: 'female', label: '👩 Female' },
         { value: 'male', label: '👨 Male' },
@@ -34,7 +36,7 @@ export const quizMocks = {
       id: 'q1f',
       type: 'single',
       question: 'What is your age?',
-      description: 'This is a description',
+      description: 'Select your age range to personalize recommendations',
       options: [
         { value: '18-24', label: '18-24 years' },
         { value: '25-29', label: '25-29 years' },
@@ -46,7 +48,7 @@ export const quizMocks = {
     {
       id: 'q2f',
       type: 'multiple',
-      question: 'What do you hate the most in a book?',
+      question: 'What do you <hate> the most in a book?',
       options: [
         { value: 'lack_logic', label: 'Lack of logic' },
         { value: 'lack_humor', label: 'Lack of humor' },
@@ -70,7 +72,7 @@ export const quizMocks = {
     {
       id: 'q4f',
       type: 'single',
-      question: 'What color is the sky?',
+      question: 'What <color> is the sky?',
       options: [
         { value: 'blue', label: 'Blue' },
         { value: 'red', label: 'Red' },
@@ -81,7 +83,7 @@ export const quizMocks = {
     {
       id: 'q5f',
       type: 'input',
-      question: 'Capital of France?',
+      question: 'Capital of Spain?',
       options: [],
     },
     // Male branch (age-based flows, 5 steps total)
@@ -107,6 +109,7 @@ export const quizMocks = {
       id: 'q2m18',
       type: 'bubble',
       question: 'What activities are you into right now?',
+      description: 'Pick a few you like',
       options: [
         { value: 'gaming', label: '🎮 Gaming' },
         { value: 'gym', label: '💪 Gym' },
@@ -324,7 +327,7 @@ export const quizMocks = {
     {
       id: 'q5o',
       type: 'input',
-      question: 'Capital of France?',
+      question: 'Capital of Italy?',
       options: [],
     },
   ],
@@ -333,6 +336,7 @@ export const quizMocks = {
       id: 'qlang',
       type: 'language',
       question: 'Selecciona el idioma',
+      description: 'Elige el idioma de la interfaz',
       options: [
         { value: 'en', label: 'English' },
         { value: 'es', label: 'Español' },
@@ -345,6 +349,7 @@ export const quizMocks = {
       id: 'qt1',
       type: 'tile',
       question: 'Selecciona tu género',
+      description: 'Lo usamos para personalizar tu cuestionario',
       options: [
         { value: 'female', label: '👩 Mujer' },
         { value: 'male', label: '👨 Hombre' },
@@ -361,7 +366,8 @@ export const quizMocks = {
       id: 'q1f',
       type: 'single',
       question: '¿Cuál es tu edad?',
-      description: 'Esta es una descripción',
+      description:
+        'Selecciona tu rango de edad para personalizar las recomendaciones',
       options: [
         { value: '18-24', label: '18-24 años' },
         { value: '25-29', label: '25-29 años' },
@@ -408,7 +414,7 @@ export const quizMocks = {
     {
       id: 'q5f',
       type: 'input',
-      question: '¿Capital de Francia?',
+      question: '¿Capital de Alemania?',
       options: [],
     },
     // Rama masculina (por edad)
@@ -434,6 +440,7 @@ export const quizMocks = {
       id: 'q2m18',
       type: 'bubble',
       question: '¿Qué actividades te gustan ahora?',
+      description: 'Elige algunas que te gusten',
       options: [
         { value: 'gaming', label: '🎮 Gaming' },
         { value: 'gym', label: '💪 Gimnasio' },
@@ -651,7 +658,7 @@ export const quizMocks = {
     {
       id: 'q5o',
       type: 'input',
-      question: '¿Capital de Francia?',
+      question: '¿Capital de Italia?',
       options: [],
     },
   ],
@@ -661,6 +668,7 @@ export const quizMocks = {
       id: 'qlang',
       type: 'language',
       question: 'Choisir la langue',
+      description: 'Choisis la langue de l’interface',
       options: [
         { value: 'en', label: 'English' },
         { value: 'es', label: 'Español' },
@@ -673,6 +681,7 @@ export const quizMocks = {
       id: 'qt1',
       type: 'tile',
       question: 'Sélectionne ton genre',
+      description: 'Nous l’utilisons pour personnaliser le quiz',
       options: [
         { value: 'female', label: '👩 Femme' },
         { value: 'male', label: '👨 Homme' },
@@ -689,7 +698,8 @@ export const quizMocks = {
       id: 'q1f',
       type: 'single',
       question: 'Quel âge as-tu ?',
-      description: 'Ceci est une description',
+      description:
+        'Sélectionne ta tranche d’âge pour personnaliser les recommandations',
       options: [
         { value: '18-24', label: '18-24 ans' },
         { value: '25-29', label: '25-29 ans' },
@@ -736,7 +746,7 @@ export const quizMocks = {
     {
       id: 'q5f',
       type: 'input',
-      question: 'Capitale de la France ?',
+      question: 'Capitale de l’Espagne ?',
       options: [],
     },
     // Branche masculine (par âge, 5 étapes)
@@ -762,6 +772,7 @@ export const quizMocks = {
       id: 'q2m18',
       type: 'bubble',
       question: 'Quelles activités t’attirent en ce moment ?',
+      description: 'Choisis quelques‑unes qui te plaisent',
       options: [
         { value: 'gaming', label: '🎮 Gaming' },
         { value: 'gym', label: '💪 Salle de sport' },
@@ -979,7 +990,7 @@ export const quizMocks = {
     {
       id: 'q5o',
       type: 'input',
-      question: 'Capitale de la France ?',
+      question: 'Capitale de l’Italie ?',
       options: [],
     },
   ],
@@ -988,6 +999,7 @@ export const quizMocks = {
       id: 'qlang',
       type: 'language',
       question: 'Sprache auswählen',
+      description: 'Wähle die Interface‑Sprache',
       options: [
         { value: 'en', label: 'English' },
         { value: 'es', label: 'Español' },
@@ -1000,6 +1012,7 @@ export const quizMocks = {
       id: 'qt1',
       type: 'tile',
       question: 'Wähle dein Geschlecht',
+      description: 'Wir nutzen dies, um dein Quiz zu personalisieren',
       options: [
         { value: 'female', label: '👩 Frau' },
         { value: 'male', label: '👨 Mann' },
@@ -1016,7 +1029,8 @@ export const quizMocks = {
       id: 'q1f',
       type: 'single',
       question: 'Wie alt bist du?',
-      description: 'Dies ist eine Beschreibung',
+      description:
+        'Wähle deine Altersgruppe, um Empfehlungen zu personalisieren',
       options: [
         { value: '18-24', label: '18-24 Jahre' },
         { value: '25-29', label: '25-29 Jahre' },
@@ -1063,7 +1077,7 @@ export const quizMocks = {
     {
       id: 'q5f',
       type: 'input',
-      question: 'Hauptstadt von Frankreich?',
+      question: 'Hauptstadt von Spanien?',
       options: [],
     },
     // Männlicher Zweig (altersbasiert, 5 Schritte)
@@ -1089,6 +1103,7 @@ export const quizMocks = {
       id: 'q2m18',
       type: 'bubble',
       question: 'Wofür begeisterst du dich gerade?',
+      description: 'Wähle ein paar aus, die dir gefallen',
       options: [
         { value: 'gaming', label: '🎮 Gaming' },
         { value: 'gym', label: '💪 Fitnessstudio' },
@@ -1306,7 +1321,7 @@ export const quizMocks = {
     {
       id: 'q5o',
       type: 'input',
-      question: 'Hauptstadt von Frankreich?',
+      question: 'Hauptstadt von Italien?',
       options: [],
     },
   ],

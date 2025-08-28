@@ -42,3 +42,8 @@ export const renderHighlighted = (
 
   return result
 }
+
+export const stripHighlighting = (input: string): string => {
+  if (!input) return input
+  return input.replace(/<([^<>]+)>/g, '$1')
+}
