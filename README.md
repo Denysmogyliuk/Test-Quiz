@@ -68,14 +68,33 @@ Tip for usage in code: use `<Trans />` in JSX and `t(i18n)`...`` for strings.
 - CSS Modules
 - ESLint + Prettier
 - React Hook Form + `@hookform/resolvers` + Yup
-- NextUI (`@nextui-org/react`)
 - `classnames`
-- Icons: `lucide-react`
-- Cookies: `cookies-next`, `js-cookie`
-- Language negotiation: `negotiator`
 
 ---
 
-## Note
+## Quiz data model tips
 
-Lingui documentation: [Lingui documentation](https://lingui.dev)
+- **Conditional flow**: Each quiz item can define `transitions` that depend on the user’s answer and determine the next question. Example (conceptual):
+
+```ts
+{
+  id: 'qt1',
+  type: 'tile',
+  question: 'Select your <gender>',
+  options: [...],
+  transitions: [
+    { to: 'q1f', when: { equals: 'female' } },
+    { to: 'q1m', when: { equals: 'male' } },
+    { to: 'q1o', when: { equals: 'other' } },
+  ],
+}
+```
+
+- **Highlight words in questions**: You can highlight parts of a question by wrapping them in angle brackets `<>`. At render time the marked part is wrapped in a tag (currently `<mark>`), while exports (CSV/email) strip the brackets:
+
+```txt
+Select your <gender>
+What do you <hate> the most in a book?
+```
+
+The UI will render the highlighted word with emphasis, but CSV and email outputs will contain plain text without `<>`.
