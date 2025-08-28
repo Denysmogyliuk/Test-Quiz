@@ -23,13 +23,15 @@ export const ThanksScreen: React.FC = () => {
 
   return (
     <section className={styles.container}>
-      <Heading center>
-        <Trans>Thank you</Trans>
-      </Heading>
+      <div className={styles.headerWrapper}>
+        <Heading center>
+          <Trans>Thank you</Trans>
+        </Heading>
 
-      <Text center color="secondary" size={3}>
-        <Trans>for supporting us and passing quiz</Trans>
-      </Text>
+        <Text center color="secondary" size={3}>
+          <Trans>for supporting us and passing quiz</Trans>
+        </Text>
+      </div>
 
       <div className={styles.actions}>
         <ButtonFilled onClick={() => downloadFile(answers, quizzes, i18n)}>

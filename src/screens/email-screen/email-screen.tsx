@@ -42,13 +42,15 @@ export const EmailScreen: React.FC = () => {
 
   return (
     <section className={styles.container}>
-      <Heading center>
-        <Trans>Email</Trans>
-      </Heading>
+      <div className={styles.headerWrapper}>
+        <Heading center>
+          <Trans>Email</Trans>
+        </Heading>
 
-      <Text center color="secondary" size={3}>
-        <Trans>Enter your email to get full access</Trans>
-      </Text>
+        <Text center color="secondary" size={3}>
+          <Trans>Enter your email to get full access</Trans>
+        </Text>
+      </div>
 
       <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
         <Input
