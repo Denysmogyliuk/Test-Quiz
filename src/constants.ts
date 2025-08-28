@@ -9,7 +9,6 @@ export const LANGUAGE_NAMES: Record<string, string> = {
   de: 'Deutsch',
 }
 
-// App configuration constants
 export const THEME_COOKIE_NAME = 'theme'
 export const THEME_COOKIE_MAX_AGE_SECONDS = 60 * 60 * 24 * 365 // one year
 export const THEME_DARK_MEDIA_QUERY = '(prefers-color-scheme: dark)'
