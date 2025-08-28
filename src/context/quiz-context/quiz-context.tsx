@@ -9,11 +9,12 @@ import {
   useCallback,
 } from 'react'
 
-import { IQuizContext, IQuizItem, IAnswers } from './types'
-import { quizMocks } from './quiz-mocks'
-import { getLocale } from '@/helpers/get-locale'
-import { QUIZ_STORAGE_KEY } from '@/constants'
 import { clearStorageAnswers } from '@/helpers/clear-storage-answers'
+import { getLocale } from '@/helpers/get-locale'
+import { IAnswers, IQuizItem } from '@/types/quiz'
+import { IQuizContext } from './types'
+import { QUIZ_STORAGE_KEY } from '@/constants'
+import { quizMocks } from './quiz-mocks'
 
 const QuizContext = createContext<IQuizContext | undefined>(undefined)
 

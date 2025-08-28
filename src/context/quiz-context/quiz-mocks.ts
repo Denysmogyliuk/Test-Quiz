@@ -1,4 +1,4 @@
-import { IQuizItem } from './types'
+import { IQuizItem } from '@/types/quiz'
 
 export const quizMocks = {
   en: [

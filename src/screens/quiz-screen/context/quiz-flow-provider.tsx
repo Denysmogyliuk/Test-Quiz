@@ -2,7 +2,8 @@
 
 import { createContext, useContext, useEffect, useRef, useState } from 'react'
 import { getLocale } from '@/helpers/get-locale'
-import { IQuizFlowContext, IQuizItem, IQuizTransition } from './types'
+import { IQuizFlowContext } from './types'
+import { IQuizItem, IQuizTransition } from '@/types/quiz'
 import { QUIZ_STORAGE_KEY, REDIRECT_DELAY } from '@/constants'
 import { QuizTypes } from '@/components/quiz-card'
 import { useLocalizedRouter } from '@/hooks/use-localized-router'

@@ -1,6 +1,6 @@
 import { I18n } from '@lingui/core'
 import { IAnswers } from './types'
-import { IQuizItem } from '@/context/quiz-context/types'
+import { IQuizItem } from '@/types/quiz'
 import { LANGUAGE_NAMES } from '@/constants'
 import { QuizTypes } from '@/components/quiz-card/types'
 import { stripHighlighting } from '@/helpers/render-highlighted'
