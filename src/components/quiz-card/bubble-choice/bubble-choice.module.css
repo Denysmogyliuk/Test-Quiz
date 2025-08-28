@@ -1,0 +1,44 @@
+.bubblesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.25rem;
+  padding-top: 0.25rem;
+}
+
+.bubble {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 9999px;
+  min-height: 10rem;
+  min-width: 10rem;
+  margin: 0 auto;
+  background: var(--color-surface-elevated);
+  color: var(--color-text);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &.selected {
+    outline: 3px solid var(--color-primary);
+  }
+}
+
+.bubbleEmoji {
+  font-size: 2rem;
+}
+
+.bubbleLabel {
+  font-size: 1rem;
+  font-weight: 600;
+}

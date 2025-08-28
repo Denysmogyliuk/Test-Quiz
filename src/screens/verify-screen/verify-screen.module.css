@@ -1,0 +1,47 @@
+.container {
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+}
+
+.progressWrapper {
+  position: relative;
+  width: 280px;
+  height: 280px;
+}
+
+.svg {
+  width: 100%;
+  height: 100%;
+}
+
+.track {
+  fill: none;
+}
+
+.progress {
+  fill: none;
+  stroke: var(--color-primary);
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.2s ease;
+}
+
+.radius {
+  stroke: rgba(255, 255, 255, 0.28);
+}
+
+.radiusCurrent {
+  stroke: #ff2aa1;
+}
+
+.center {
+  font-size: 2.5rem;
+  font-weight: 800;
+  fill: var(--color-text);
+}
+
+.caption {
+  color: var(--color-text-secondary);
+  font-size: 1.25rem;
+  text-align: center;
+}

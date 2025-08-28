@@ -1,0 +1,122 @@
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  padding: 1rem 2rem 1rem 3.5rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  min-height: 48px;
+  user-select: none;
+  background-color: var(--color-surface-elevated);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: var(--color-surface-hover);
+    border-color: var(--color-border-hover);
+  }
+
+  & input[type="radio"],
+  & input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  &.radio {
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      border: 0.125rem solid var(--color-border);
+      background: var(--color-surface);
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+    &.optionSelected::before {
+      border-color: var(--color-primary);
+      background: var(--color-primary);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      width: 0.75rem;
+      height: 0.75rem;
+      border-radius: 50%;
+      background: var(--color-surface);
+      z-index: 2;
+      transform: translateY(-50%) translateX(0.625rem) scale(0);
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+    &.optionSelected::after {
+      opacity: 1;
+      transform: translateY(-50%) translateX(0.625rem) scale(1);
+    }
+  }
+
+  &.checkbox {
+    &::before {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 0.375rem;
+      border: 0.125rem solid var(--color-border);
+      background: var(--color-surface);
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+
+    &.optionSelected::before {
+      border-color: var(--color-primary);
+      background: var(--color-primary);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 1rem;
+      top: 50%;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 0.25rem;
+      background-color: var(--color-surface);
+      z-index: 2;
+      transform: translateY(-50%) translateX(0.5rem) scale(0);
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+    &.optionSelected::after {
+      opacity: 1;
+      transform: translateY(-50%) translateX(0.5rem) scale(1);
+    }
+  }
+}
+
+.optionSelected {
+  background: rgba(99, 102, 241, 0.1) !important;
+  border-color: var(--color-primary) !important;
+}

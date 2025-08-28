@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-08-27 18:15+0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: fr\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/screens/result-screen/helpers.ts:40
+msgid "answer"
+msgstr "réponse"
+
+#: src/screens/thanks-screen/thanks-screen.tsx:35
+msgid "Download my answers"
+msgstr "Télécharger mes réponses"
+
+#: src/screens/email-screen/email-screen.tsx:46
+msgid "Email"
+msgstr "E-mail"
+
+#: src/screens/email-screen/email-screen.tsx:24
+msgid "Enter correct address"
+msgstr "Saisis une adresse valide"
+
+#: src/screens/email-screen/email-screen.tsx:25
+msgid "Enter your email"
+msgstr "Saisis ton e-mail"
+
+#: src/screens/email-screen/email-screen.tsx:50
+msgid "Enter your email to get full access"
+msgstr "Saisis ton e-mail pour obtenir un accès complet"
+
+#: src/screens/verify-screen/verify-screen.tsx:85
+msgid "Finding collections for you…"
+msgstr "Recherche de collections pour toi…"
+
+#: src/screens/quiz-screen/quiz-screen.tsx:64
+msgid "Finish"
+msgstr "Terminer"
+
+#: src/screens/thanks-screen/thanks-screen.tsx:30
+msgid "for supporting us and passing quiz"
+msgstr "pour ton soutien et d'avoir passé le quiz"
+
+#: src/screens/quiz-screen/quiz-screen.tsx:55
+#: src/screens/email-screen/email-screen.tsx:67
+msgid "Next"
+msgstr "Suivant"
+
+#: src/screens/result-screen/helpers.ts:40
+msgid "order"
+msgstr "ordre"
+
+#: src/app/[lang]/routes-metadata.ts:15
+msgid "Quiz"
+msgstr "Quiz"
+
+#: src/app/[lang]/routes-metadata.ts:19
+msgid "Quiz results"
+msgstr "Résultats du quiz"
+
+#: src/screens/thanks-screen/thanks-screen.tsx:39
+msgid "Retake quiz"
+msgstr "Reprendre le quiz"
+
+#: src/app/[lang]/routes-metadata.ts:11
+msgid "Select language"
+msgstr "Choisir la langue"
+
+#: src/app/[lang]/routes-metadata.ts:12
+msgid "Select language to continue"
+msgstr "Choisis une langue pour continuer"
+
+#: src/app/[lang]/generate-metadata.tsx:40
+#: src/app/[lang]/generate-metadata.tsx:41
+msgid "Test quiz"
+msgstr "Quiz de test"
+
+#: src/screens/thanks-screen/thanks-screen.tsx:26
+msgid "Thank you"
+msgstr "Merci"
+
+#: src/screens/result-screen/helpers.ts:40
+msgid "title"
+msgstr "titre"
+
+#: src/screens/result-screen/helpers.ts:40
+msgid "type"
+msgstr "type"
+
+#: src/screens/email-screen/email-screen.tsx:56
+msgid "Your email"
+msgstr "Ton e-mail"
+
+#: src/app/[lang]/routes-metadata.ts:16
+msgid "Your quiz"
+msgstr "Ton quiz"
+
+#: src/app/[lang]/routes-metadata.ts:20
+msgid "Your results"
+msgstr "Tes résultats"

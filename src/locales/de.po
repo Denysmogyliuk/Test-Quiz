@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-08-27 18:15+0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: de\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/screens/result-screen/helpers.ts:40
+msgid "answer"
+msgstr "Antwort"
+
+#: src/screens/thanks-screen/thanks-screen.tsx:35
+msgid "Download my answers"
+msgstr "Meine Antworten herunterladen"
+
+#: src/screens/email-screen/email-screen.tsx:46
+msgid "Email"
+msgstr "E-Mail"
+
+#: src/screens/email-screen/email-screen.tsx:24
+msgid "Enter correct address"
+msgstr "Gib eine gültige Adresse ein"
+
+#: src/screens/email-screen/email-screen.tsx:25
+msgid "Enter your email"
+msgstr "Gib deine E-Mail ein"
+
+#: src/screens/email-screen/email-screen.tsx:50
+msgid "Enter your email to get full access"
+msgstr "Gib deine E-Mail ein, um vollen Zugriff zu erhalten"
+
+#: src/screens/verify-screen/verify-screen.tsx:85
+msgid "Finding collections for you…"
+msgstr "Wir suchen Sammlungen für dich…"
+
+#: src/screens/quiz-screen/quiz-screen.tsx:64
+msgid "Finish"
+msgstr "Fertig"
+
+#: src/screens/thanks-screen/thanks-screen.tsx:30
+msgid "for supporting us and passing quiz"
+msgstr "für deine Unterstützung und das Absolvieren des Quiz"
+
+#: src/screens/quiz-screen/quiz-screen.tsx:55
+#: src/screens/email-screen/email-screen.tsx:67
+msgid "Next"
+msgstr "Weiter"
+
+#: src/screens/result-screen/helpers.ts:40
+msgid "order"
+msgstr "Reihenfolge"
+
+#: src/app/[lang]/routes-metadata.ts:15
+msgid "Quiz"
+msgstr "Quiz"
+
+#: src/app/[lang]/routes-metadata.ts:19
+msgid "Quiz results"
+msgstr "Quizergebnisse"
+
+#: src/screens/thanks-screen/thanks-screen.tsx:39
+msgid "Retake quiz"
+msgstr "Quiz erneut starten"
+
+#: src/app/[lang]/routes-metadata.ts:11
+msgid "Select language"
+msgstr "Sprache auswählen"
+
+#: src/app/[lang]/routes-metadata.ts:12
+msgid "Select language to continue"
+msgstr "Wähle eine Sprache, um fortzufahren"
+
+#: src/app/[lang]/generate-metadata.tsx:40
+#: src/app/[lang]/generate-metadata.tsx:41
+msgid "Test quiz"
+msgstr "Test-Quiz"
+
+#: src/screens/thanks-screen/thanks-screen.tsx:26
+msgid "Thank you"
+msgstr "Danke"
+
+#: src/screens/result-screen/helpers.ts:40
+msgid "title"
+msgstr "Titel"
+
+#: src/screens/result-screen/helpers.ts:40
+msgid "type"
+msgstr "Typ"
+
+#: src/screens/email-screen/email-screen.tsx:56
+msgid "Your email"
+msgstr "Deine E-Mail"
+
+#: src/app/[lang]/routes-metadata.ts:16
+msgid "Your quiz"
+msgstr "Dein Quiz"
+
+#: src/app/[lang]/routes-metadata.ts:20
+msgid "Your results"
+msgstr "Deine Ergebnisse"

@@ -1,0 +1,5 @@
+.quizCard {
+  &.loading {
+    pointer-events: none;
+  }
+}

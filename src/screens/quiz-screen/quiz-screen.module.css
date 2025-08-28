@@ -1,0 +1,42 @@
+.quizContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.navigationBlock {
+  display: grid;
+  gap: 1rem;
+}
+
+.prevButton.prevButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.125rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  gap: 0.25rem;
+  transition: opacity 0.3s ease-in-out;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.25em;
+    mask: url("data:image/svg+xml;utf8,<svg fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path d='M10 12L6 8l4-4'/></svg>")
+      no-repeat center/contain;
+    background-color: currentColor;
+    vertical-align: middle;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+}

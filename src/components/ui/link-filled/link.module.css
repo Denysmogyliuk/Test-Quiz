@@ -1,0 +1,81 @@
+.link {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.75rem;
+  font-weight: 500;
+  position: relative;
+  box-sizing: border-box;
+  gap: 0.25rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 100%;
+  min-height: var(--medium-button-height);
+  font-size: 1rem;
+  padding: 0.2rem 1.5rem;
+  min-height: 2.5rem;
+  transition: all 0.3s ease;
+  box-shadow: var(--card-shadow);
+}
+
+.mainLink {
+  transition: all 0.3s ease;
+  color: var(--button-main-text);
+  background: var(--button-main-background);
+  border: 1px solid var(--button-main-border);
+
+  &:hover {
+    color: var(--button-main-hover-text);
+    background: var(--button-main-hover-background);
+    border-color: var(--button-main-hover-border);
+    outline: none;
+  }
+
+  &:active,
+  &:focus {
+    color: var(--button-main-active-text);
+    background: var(--button-main-active-background);
+    border-color: var(--button-main-active-border);
+    outline: none;
+  }
+
+  &:disabled {
+    background: var(--button-main-disabled-background);
+    border-color: var(--button-main-disabled-border);
+    outline: none;
+    cursor: not-allowed;
+  }
+}
+
+.secondaryLink {
+  color: var(--button-secondary-text);
+  background: var(--button-secondary-background);
+  border: 1px solid var(--button-secondary-border);
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: var(--button-secondary-hover-text);
+    background: var(--button-secondary-hover-background);
+    border-color: var(--button-secondary-hover-border);
+    outline: none;
+  }
+
+  &:active,
+  &:focus {
+    color: var(--button-secondary-active-text);
+    background: var(--button-secondary-active-background);
+    border-color: var(--button-secondary-active-border);
+    outline: none;
+  }
+
+  &:disabled {
+    color: var(--button-secondary-disabled-text);
+    background: var(--button-secondary-disabled-background);
+    border-color: var(--button-secondary-disabled-border);
+    outline: none;
+    cursor: not-allowed;
+  }
+}

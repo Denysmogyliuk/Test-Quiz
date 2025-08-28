@@ -1,0 +1,16 @@
+.quizLayout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 42rem;
+  margin: 0 auto;
+  min-height: 100vh;
+  flex-grow: 1;
+
+  @media (min-width: 48rem) {
+    padding: 2rem;
+  }
+}
