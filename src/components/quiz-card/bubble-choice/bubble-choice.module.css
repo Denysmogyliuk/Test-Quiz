@@ -1,6 +1,6 @@
 .bubblesGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
   gap: 1.25rem;
   padding-top: 0.25rem;
 }
@@ -14,9 +14,9 @@
   gap: 0.5rem;
   padding: 1rem;
   border-radius: 9999px;
-  min-height: 10rem;
-  min-width: 10rem;
-  margin: 0 auto;
+  min-height: 1rem;
+  min-width: 1rem;
+  aspect-ratio: 1 / 1;
   background: var(--color-surface-elevated);
   color: var(--color-text);
   text-align: center;
@@ -39,6 +39,6 @@
 }
 
 .bubbleLabel {
-  font-size: 1rem;
+  font-size: clamp(1rem, 1.5vw, 1rem);
   font-weight: 600;
 }
