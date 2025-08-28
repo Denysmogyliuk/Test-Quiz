@@ -35,7 +35,11 @@ export const ThanksScreen: React.FC = () => {
           <Trans>Download my answers</Trans>
         </ButtonFilled>
 
-        <ButtonFilled onClick={restartQuiz} className={styles.restartQuiz}>
+        <ButtonFilled
+          onClick={restartQuiz}
+          className={styles.restartQuiz}
+          color="secondary"
+        >
           <Trans>Retake quiz</Trans>
         </ButtonFilled>
       </div>

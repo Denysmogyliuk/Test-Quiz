@@ -26,7 +26,9 @@
   outline: none;
 
   &:hover {
-    transform: translateY(-2px);
+    background-color: var(--color-surface-hover);
+    transform: translateY(-0.4rem);
+    border-color: var(--color-border-hover);
   }
 
   &.selected {
@@ -35,7 +37,7 @@
 }
 
 .bubbleEmoji {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .bubbleLabel {

@@ -8,15 +8,27 @@ export interface RouteMetadata {
 
 export const routesMetadata: Record<string, RouteMetadata> = {
   '/': {
-    title: (i18n: I18n) => t(i18n)`Select language`,
-    description: (i18n: I18n) => t(i18n)`Select language to continue`,
-  },
-  '/quiz': {
     title: (i18n: I18n) => t(i18n)`Quiz`,
     description: (i18n: I18n) => t(i18n)`Your quiz`,
   },
-  '/result': {
-    title: (i18n: I18n) => t(i18n)`Quiz results`,
-    description: (i18n: I18n) => t(i18n)`Your results`,
+
+  '/quiz/1': {
+    title: (i18n: I18n) => t(i18n)`Select Language`,
+    description: (i18n: I18n) => t(i18n)`Select Quiz Language`,
+  },
+
+  '/verify': {
+    title: (i18n: I18n) => t(i18n)`Getting Results`,
+    description: (i18n: I18n) => t(i18n)`Getting Your Results`,
+  },
+
+  '/email': {
+    title: (i18n: I18n) => t(i18n)`Send Results`,
+    description: (i18n: I18n) => t(i18n)`Send Quiz Results`,
+  },
+
+  '/thanks': {
+    title: (i18n: I18n) => t(i18n)`Thanks!`,
+    description: (i18n: I18n) => t(i18n)`Thank you for your time!`,
   },
 }
