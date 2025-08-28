@@ -4,7 +4,7 @@ import { IQuizItem } from '@/context/quiz-context/types'
 import { LANGUAGE_NAMES } from '@/constants'
 import { QuizTypes } from '@/components/quiz-card/types'
 import { stripHighlighting } from '@/helpers/render-highlighted'
-import { t } from '@lingui/core/macro'
+import { t } from '@lingui/macro'
 
 export const getAnswerLabel = (
   quiz: IQuizItem,
@@ -81,7 +81,7 @@ export const downloadFile = (
   const url = URL.createObjectURL(blob)
   const a = document.createElement('a')
   a.href = url
-  a.download = `quiz-results.csv`
+  a.download = `${t(i18nSafe)`quiz-results`}.csv`
   a.click()
   URL.revokeObjectURL(url)
 }

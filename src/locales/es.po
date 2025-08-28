@@ -13,15 +13,15 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/screens/result-screen/helpers.ts:40
+#: src/screens/result-screen/helpers.ts:55
 msgid "answer"
 msgstr "respuesta"
 
-#: src/screens/thanks-screen/thanks-screen.tsx:35
+#: src/screens/thanks-screen/thanks-screen.tsx:40
 msgid "Download my answers"
 msgstr "Descargar mis respuestas"
 
-#: src/screens/email-screen/email-screen.tsx:46
+#: src/screens/email-screen/email-screen.tsx:47
 msgid "Email"
 msgstr "Correo electrónico"
 
@@ -33,11 +33,11 @@ msgstr "Introduce una dirección válida"
 msgid "Enter your email"
 msgstr "Introduce tu correo electrónico"
 
-#: src/screens/email-screen/email-screen.tsx:50
+#: src/screens/email-screen/email-screen.tsx:51
 msgid "Enter your email to get full access"
 msgstr "Introduce tu correo para obtener acceso completo"
 
-#: src/screens/verify-screen/verify-screen.tsx:85
+#: src/screens/verify-screen/verify-screen.tsx:92
 msgid "Finding collections for you…"
 msgstr "Buscando colecciones para ti…"
 
@@ -45,64 +45,84 @@ msgstr "Buscando colecciones para ti…"
 msgid "Finish"
 msgstr "Finalizar"
 
-#: src/screens/thanks-screen/thanks-screen.tsx:30
+#: src/screens/thanks-screen/thanks-screen.tsx:32
 msgid "for supporting us and passing quiz"
 msgstr "por apoyarnos y completar el cuestionario"
 
+#: src/app/[lang]/routes-metadata.ts:21
+msgid "Getting Results"
+msgstr "Obteniendo resultados"
+
+#: src/app/[lang]/routes-metadata.ts:22
+msgid "Getting Your Results"
+msgstr "Obteniendo tus resultados"
+
 #: src/screens/quiz-screen/quiz-screen.tsx:55
-#: src/screens/email-screen/email-screen.tsx:67
+#: src/screens/email-screen/email-screen.tsx:69
 msgid "Next"
 msgstr "Siguiente"
 
-#: src/screens/result-screen/helpers.ts:40
+#: src/screens/result-screen/helpers.ts:52
 msgid "order"
 msgstr "orden"
 
-#: src/app/[lang]/routes-metadata.ts:15
+#: src/app/[lang]/routes-metadata.ts:11
 msgid "Quiz"
 msgstr "Cuestionario"
 
-#: src/app/[lang]/routes-metadata.ts:19
-msgid "Quiz results"
-msgstr "Resultados del cuestionario"
+#: src/screens/result-screen/helpers.ts:84
+msgid "quiz-results"
+msgstr "resultados-del-cuestionario"
 
-#: src/screens/thanks-screen/thanks-screen.tsx:39
+#: src/screens/thanks-screen/thanks-screen.tsx:48
 msgid "Retake quiz"
 msgstr "Repetir cuestionario"
 
-#: src/app/[lang]/routes-metadata.ts:11
-msgid "Select language"
-msgstr "Selecciona el idioma"
+#: src/app/[lang]/routes-metadata.ts:16
+msgid "Select Language"
+msgstr "Seleccionar idioma"
 
-#: src/app/[lang]/routes-metadata.ts:12
-msgid "Select language to continue"
-msgstr "Selecciona un idioma para continuar"
+#: src/app/[lang]/routes-metadata.ts:17
+msgid "Select Quiz Language"
+msgstr "Selecciona el idioma del cuestionario"
+
+#: src/app/[lang]/routes-metadata.ts:27
+msgid "Send Quiz Results"
+msgstr "Enviar resultados del cuestionario"
+
+#: src/app/[lang]/routes-metadata.ts:26
+msgid "Send Results"
+msgstr "Enviar resultados"
 
 #: src/app/[lang]/generate-metadata.tsx:40
 #: src/app/[lang]/generate-metadata.tsx:41
 msgid "Test quiz"
 msgstr "Cuestionario de prueba"
 
-#: src/screens/thanks-screen/thanks-screen.tsx:26
+#: src/screens/thanks-screen/thanks-screen.tsx:28
 msgid "Thank you"
 msgstr "Gracias"
 
-#: src/screens/result-screen/helpers.ts:40
+#: src/app/[lang]/routes-metadata.ts:32
+msgid "Thank you for your time!"
+msgstr "¡Gracias por tu tiempo!"
+
+#: src/app/[lang]/routes-metadata.ts:31
+msgid "Thanks!"
+msgstr "¡Gracias!"
+
+#: src/screens/result-screen/helpers.ts:53
 msgid "title"
 msgstr "título"
 
-#: src/screens/result-screen/helpers.ts:40
+#: src/screens/result-screen/helpers.ts:54
 msgid "type"
 msgstr "tipo"
 
-#: src/screens/email-screen/email-screen.tsx:56
+#: src/screens/email-screen/email-screen.tsx:58
 msgid "Your email"
 msgstr "Tu correo"
 
-#: src/app/[lang]/routes-metadata.ts:16
+#: src/app/[lang]/routes-metadata.ts:12
 msgid "Your quiz"
 msgstr "Tu cuestionario"
-
-#: src/app/[lang]/routes-metadata.ts:20
-msgid "Your results"
-msgstr "Tus resultados"

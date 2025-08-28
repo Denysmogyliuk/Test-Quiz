@@ -21,7 +21,7 @@
   color: var(--color-text);
   text-align: center;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all var(--transition-base);
   border: none;
   outline: none;
 

@@ -18,7 +18,7 @@
   background-color: var(--color-surface-elevated);
   border: 1px solid var(--color-border);
   color: var(--color-text);
-  transition: all 0.3s ease;
+  transition: all var(--transition-base);
 
   &:hover {
     background-color: var(--color-surface-hover);
@@ -47,12 +47,14 @@
       top: 50%;
       transform: translateY(-50%);
       box-sizing: border-box;
-      transition: all 0.3s ease;
+      transition: all var(--transition-base);
     }
+
     &.optionSelected::before {
       border-color: var(--color-primary);
       background: var(--color-primary);
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -65,8 +67,9 @@
       z-index: 2;
       transform: translateY(-50%) translateX(0.625rem) scale(0);
       opacity: 0;
-      transition: all 0.3s ease;
+      transition: all var(--transition-base);
     }
+
     &.optionSelected::after {
       opacity: 1;
       transform: translateY(-50%) translateX(0.625rem) scale(1);
@@ -87,7 +90,7 @@
       top: 50%;
       transform: translateY(-50%);
       box-sizing: border-box;
-      transition: all 0.3s ease;
+      transition: all var(--transition-base);
     }
 
     &.optionSelected::before {
@@ -109,6 +112,7 @@
       opacity: 0;
       transition: all 0.3s ease;
     }
+
     &.optionSelected::after {
       opacity: 1;
       transform: translateY(-50%) translateX(0.5rem) scale(1);

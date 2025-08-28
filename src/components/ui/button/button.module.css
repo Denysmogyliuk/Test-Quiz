@@ -33,12 +33,12 @@
   font-size: 1rem;
   padding: 0.2rem 1.5rem;
   min-height: 2.5rem;
-  transition: all 0.3s ease;
+  transition: all var(--transition-base);
   box-shadow: var(--card-shadow);
 }
 
 .mainButton {
-  transition: all 0.3s ease;
+  transition: all var(--transition-base);
   color: var(--button-main-text);
   background: var(--button-main-background);
   border: 1px solid var(--button-main-border);
@@ -70,7 +70,7 @@
   color: var(--button-secondary-text);
   background: var(--button-secondary-background);
   border: 1px solid var(--button-secondary-border);
-  transition: all 0.3s ease;
+  transition: all var(--transition-base);
 
   &:hover {
     color: var(--button-secondary-hover-text);

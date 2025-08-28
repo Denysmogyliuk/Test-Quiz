@@ -20,7 +20,7 @@ body {
   overflow-x: hidden;
   font-weight: normal;
   background: var(--color-background);
-  transition: background-color 0.3s ease;
+  transition: background-color var(--transition-base);
   scrollbar-gutter: stable both-edges;
 }
 
