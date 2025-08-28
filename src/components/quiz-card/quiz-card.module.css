@@ -3,3 +3,16 @@
     pointer-events: none;
   }
 }
+
+.questionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.question {
+  & mark {
+    background-color: transparent;
+    color: var(--color-primary);
+  }
+}

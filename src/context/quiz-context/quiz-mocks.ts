@@ -17,7 +17,7 @@ export const quizMocks = {
     {
       id: 'qt1',
       type: 'tile',
-      question: 'Select your gender',
+      question: 'Select your <gender>',
       options: [
         { value: 'female', label: '👩 Female' },
         { value: 'male', label: '👨 Male' },
@@ -58,7 +58,7 @@ export const quizMocks = {
     {
       id: 'q3f',
       type: 'bubble',
-      question: 'What are your favorite topics?',
+      question: 'What are your favorite <topics>?',
       options: [
         { value: 'action', label: '💃 Action' },
         { value: 'romance', label: '🥰 Romance' },
@@ -118,7 +118,7 @@ export const quizMocks = {
     {
       id: 'q3m18',
       type: 'single',
-      question: 'Pick a preferred content genre',
+      question: 'Pick a preferred content <genre>',
       options: [
         { value: 'action', label: 'Action' },
         { value: 'scifi', label: 'Sci‑Fi' },
@@ -192,7 +192,7 @@ export const quizMocks = {
     {
       id: 'q2m30',
       type: 'bubble',
-      question: 'What topics inspire you the most?',
+      question: 'What topics inspire you the <most>?',
       options: [
         { value: 'startups', label: '🚀 Startups' },
         { value: 'investing', label: '💹 Investing' },
@@ -235,7 +235,7 @@ export const quizMocks = {
     {
       id: 'q2m40',
       type: 'bubble',
-      question: 'What do you enjoy the most?',
+      question: 'What do you enjoy the <most>?',
       options: [
         { value: 'travel', label: '✈️ Travel' },
         { value: 'gardening', label: '🌱 Gardening' },
@@ -278,7 +278,7 @@ export const quizMocks = {
     {
       id: 'q1o',
       type: 'single',
-      question: 'Pick a preferred UI theme',
+      question: 'Pick a preferred UI <theme>',
       options: [
         { value: 'light', label: 'Light' },
         { value: 'dark', label: 'Dark' },
@@ -289,7 +289,7 @@ export const quizMocks = {
     {
       id: 'q2o',
       type: 'multiple',
-      question: 'Select the fruits:',
+      question: 'Select the <fruits>:',
       options: [
         { value: 'apple', label: 'Apple' },
         { value: 'carrot', label: 'Carrot' },
@@ -385,7 +385,7 @@ export const quizMocks = {
     {
       id: 'q3f',
       type: 'bubble',
-      question: '¿Cuáles son tus temas favoritos?',
+      question: '¿Cuáles son tus <temas> favoritos?',
       options: [
         { value: 'action', label: '💃 Acción' },
         { value: 'romance', label: '🥰 Romance' },
@@ -445,7 +445,7 @@ export const quizMocks = {
     {
       id: 'q3m18',
       type: 'single',
-      question: 'Elige un género de contenido',
+      question: 'Elige un género de <contenido>',
       options: [
         { value: 'action', label: 'Acción' },
         { value: 'scifi', label: 'Ciencia ficción' },
@@ -519,7 +519,7 @@ export const quizMocks = {
     {
       id: 'q2m30',
       type: 'bubble',
-      question: '¿Qué temas te inspiran más?',
+      question: '¿Qué temas te inspiran <más>?',
       options: [
         { value: 'startups', label: '🚀 Startups' },
         { value: 'investing', label: '💹 Inversión' },
@@ -562,7 +562,7 @@ export const quizMocks = {
     {
       id: 'q2m40',
       type: 'bubble',
-      question: '¿Qué disfrutas más?',
+      question: '¿Qué disfrutas <más>?',
       options: [
         { value: 'travel', label: '✈️ Viajar' },
         { value: 'gardening', label: '🌱 Jardinería' },
@@ -605,7 +605,7 @@ export const quizMocks = {
     {
       id: 'q1o',
       type: 'single',
-      question: 'Elige un tema de UI preferido',
+      question: 'Elige un tema de UI <preferido>',
       options: [
         { value: 'light', label: 'Claro' },
         { value: 'dark', label: 'Oscuro' },
@@ -616,7 +616,7 @@ export const quizMocks = {
     {
       id: 'q2o',
       type: 'multiple',
-      question: 'Selecciona las frutas:',
+      question: 'Selecciona las <frutas>:',
       options: [
         { value: 'apple', label: 'Manzana' },
         { value: 'carrot', label: 'Zanahoria' },
@@ -713,7 +713,7 @@ export const quizMocks = {
     {
       id: 'q3f',
       type: 'bubble',
-      question: 'Quels sont tes sujets préférés ?',
+      question: 'Quels sont tes <sujets> préférés ?',
       options: [
         { value: 'action', label: '💃 Action' },
         { value: 'romance', label: '🥰 Romance' },
@@ -773,7 +773,7 @@ export const quizMocks = {
     {
       id: 'q3m18',
       type: 'single',
-      question: 'Choisis un genre de contenu',
+      question: 'Choisis un genre de <contenu>',
       options: [
         { value: 'action', label: 'Action' },
         { value: 'scifi', label: 'Sci‑Fi' },
@@ -847,7 +847,7 @@ export const quizMocks = {
     {
       id: 'q2m30',
       type: 'bubble',
-      question: 'Quels sujets t’inspirent le plus ?',
+      question: 'Quels sujets t’inspirent le <plus> ?',
       options: [
         { value: 'startups', label: '🚀 Startups' },
         { value: 'investing', label: '💹 Investissement' },
@@ -890,7 +890,7 @@ export const quizMocks = {
     {
       id: 'q2m40',
       type: 'bubble',
-      question: 'Qu’apprécies‑tu le plus ?',
+      question: 'Qu’apprécies‑tu le <plus> ?',
       options: [
         { value: 'travel', label: '✈️ Voyage' },
         { value: 'gardening', label: '🌱 Jardinage' },
@@ -933,7 +933,7 @@ export const quizMocks = {
     {
       id: 'q1o',
       type: 'single',
-      question: "Choisis un thème d'interface préféré",
+      question: "Choisis un thème d'<interface> préféré",
       options: [
         { value: 'light', label: 'Clair' },
         { value: 'dark', label: 'Sombre' },
@@ -944,7 +944,7 @@ export const quizMocks = {
     {
       id: 'q2o',
       type: 'multiple',
-      question: 'Sélectionnez les fruits :',
+      question: 'Sélectionnez les <fruits> :',
       options: [
         { value: 'apple', label: 'Pomme' },
         { value: 'carrot', label: 'Carotte' },
@@ -1040,7 +1040,7 @@ export const quizMocks = {
     {
       id: 'q3f',
       type: 'bubble',
-      question: 'Was sind deine Lieblingsthemen?',
+      question: 'Was sind deine <Lieblingsthemen>?',
       options: [
         { value: 'action', label: '💃 Action' },
         { value: 'romance', label: '🥰 Romanze' },
@@ -1100,7 +1100,7 @@ export const quizMocks = {
     {
       id: 'q3m18',
       type: 'single',
-      question: 'Bevorzugtes Inhaltsgenre',
+      question: 'Bevorzugtes Inhalts<genre>',
       options: [
         { value: 'action', label: 'Action' },
         { value: 'scifi', label: 'Sci‑Fi' },
@@ -1174,7 +1174,7 @@ export const quizMocks = {
     {
       id: 'q2m30',
       type: 'bubble',
-      question: 'Welche Themen inspirieren dich am meisten?',
+      question: 'Welche Themen inspirieren dich am <meisten>?',
       options: [
         { value: 'startups', label: '🚀 Startups' },
         { value: 'investing', label: '💹 Investieren' },
@@ -1217,7 +1217,7 @@ export const quizMocks = {
     {
       id: 'q2m40',
       type: 'bubble',
-      question: 'Was macht dir am meisten Spaß?',
+      question: 'Was macht dir am <meisten> Spaß?',
       options: [
         { value: 'travel', label: '✈️ Reisen' },
         { value: 'gardening', label: '🌱 Gärtnern' },
@@ -1260,7 +1260,7 @@ export const quizMocks = {
     {
       id: 'q1o',
       type: 'single',
-      question: 'Wähle ein bevorzugtes UI-Theme',
+      question: 'Wähle ein bevorzugtes UI-<Theme>',
       options: [
         { value: 'light', label: 'Hell' },
         { value: 'dark', label: 'Dunkel' },
@@ -1271,7 +1271,7 @@ export const quizMocks = {
     {
       id: 'q2o',
       type: 'multiple',
-      question: 'Wählen Sie die Früchte aus:',
+      question: 'Wählen Sie die <Früchte> aus:',
       options: [
         { value: 'apple', label: 'Apfel' },
         { value: 'carrot', label: 'Karotte' },

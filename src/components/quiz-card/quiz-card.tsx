@@ -5,6 +5,7 @@ import { Card } from '../ui/card/card'
 import { Text } from '../typography/text/text'
 import { QuizCardContext } from './quiz-card-context'
 import classNames from 'classnames'
+import { renderHighlighted } from '@/helpers/render-highlighted'
 
 export interface QuizCardProps {
   children: ReactNode
@@ -47,17 +48,22 @@ export const QuizCard: React.FC<QuizCardProps> = (props) => {
     if (!isControlled) setInternalValue(value)
     onChange?.(value)
   }
+
+  const highlightedQuestion = renderHighlighted(question, { tag: 'mark' })
+
   return (
     <Card className={classNames(styles.quizCard, isLoading && styles.loading)}>
-      <Text size={2} bold>
-        {question}
-      </Text>
-
-      {description && (
-        <Text size={4} color="secondary">
-          {description}
+      <div className={styles.questionContainer}>
+        <Text size={2} bold className={styles.question}>
+          {highlightedQuestion}
         </Text>
-      )}
+
+        {description && (
+          <Text size={4} color="secondary">
+            {description}
+          </Text>
+        )}
+      </div>
 
       <QuizCardContext.Provider
         value={{ value: currentValue, setValue, type, options }}
