@@ -5,6 +5,7 @@ import { Trans } from '@lingui/react/macro'
 import { useEffect, useRef, useState } from 'react'
 import styles from './verify-screen.module.css'
 import { useLocalizedRouter } from '@/hooks/use-localized-router'
+import { useQuizContext } from '@/context/quiz-context/quiz-context'
 
 const TIMEOUT = 5000
 
@@ -12,6 +13,10 @@ export const VerifyScreen: React.FC = () => {
   const [progress, setProgress] = useState(0)
   const timeoutRef = useRef<number | null>(null)
   const router = useLocalizedRouter()
+
+  // TODO: remove this after request is implemented
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { answers } = useQuizContext()
 
   useEffect(() => {
     const start = performance.now()
@@ -33,6 +38,8 @@ export const VerifyScreen: React.FC = () => {
       clearTimeout(timer)
     }
   }, [])
+
+  // TODO: add request for results
 
   const size = 280
   const strokeWidth = 18
@@ -81,7 +88,7 @@ export const VerifyScreen: React.FC = () => {
         </svg>
       </div>
 
-      <Heading size={2}>
+      <Heading size={2} center>
         <Trans>Finding collections for you…</Trans>
       </Heading>
     </section>

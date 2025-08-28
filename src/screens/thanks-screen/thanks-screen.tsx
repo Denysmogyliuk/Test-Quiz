@@ -7,6 +7,7 @@ import { Trans, useLingui } from '@lingui/react/macro'
 import { useQuizContext } from '@/context/quiz-context/quiz-context'
 import { useRouter } from 'next/navigation'
 import ButtonFilled from '@/components/ui/button/button-filled'
+import DownloadIcon from '@/components/icons/DownloadIcon'
 import styles from './thanks-screen.module.css'
 
 export const ThanksScreen: React.FC = () => {
@@ -26,12 +27,14 @@ export const ThanksScreen: React.FC = () => {
         <Trans>Thank you</Trans>
       </Heading>
 
-      <Text center color="secondary">
+      <Text center color="secondary" size={3}>
         <Trans>for supporting us and passing quiz</Trans>
       </Text>
 
       <div className={styles.actions}>
         <ButtonFilled onClick={() => downloadFile(answers, quizzes, i18n)}>
+          <DownloadIcon width={20} height={20} />
+
           <Trans>Download my answers</Trans>
         </ButtonFilled>
 

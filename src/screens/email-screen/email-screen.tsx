@@ -46,7 +46,7 @@ export const EmailScreen: React.FC = () => {
         <Trans>Email</Trans>
       </Heading>
 
-      <Text center color="secondary">
+      <Text center color="secondary" size={3}>
         <Trans>Enter your email to get full access</Trans>
       </Text>
 
