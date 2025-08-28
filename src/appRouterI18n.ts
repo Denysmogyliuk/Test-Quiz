@@ -14,6 +14,7 @@ async function loadCatalog(locale: SupportedLocales): Promise<{
     [locale]: messages,
   }
 }
+
 const catalogs = await Promise.all(locales.map(loadCatalog))
 
 export const allMessages = catalogs.reduce((acc, oneCatalog) => {

@@ -4,7 +4,18 @@ import Negotiator from 'negotiator'
 
 const { locales } = linguiConfig
 
-export function middleware(request: NextRequest) {
+const getRequestLocale = (requestHeaders: Headers): string => {
+  const langHeader = requestHeaders.get('accept-language') || undefined
+  const languages = new Negotiator({
+    headers: { 'accept-language': langHeader },
+  }).languages(locales.slice())
+
+  const activeLocale = languages[0] || locales[0] || 'en'
+
+  return activeLocale
+}
+
+export const middleware = (request: NextRequest) => {
   const { pathname } = request.nextUrl
 
   const pathnameHasLocale = locales.some(
@@ -28,17 +39,6 @@ export function middleware(request: NextRequest) {
 
   request.nextUrl.pathname = newPathname
   return NextResponse.redirect(request.nextUrl)
-}
-
-function getRequestLocale(requestHeaders: Headers): string {
-  const langHeader = requestHeaders.get('accept-language') || undefined
-  const languages = new Negotiator({
-    headers: { 'accept-language': langHeader },
-  }).languages(locales.slice())
-
-  const activeLocale = languages[0] || locales[0] || 'en'
-
-  return activeLocale
 }
 
 export const config = {

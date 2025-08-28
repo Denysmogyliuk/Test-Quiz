@@ -10,7 +10,7 @@ import {
   THEME_DARK_MEDIA_QUERY,
 } from '@/constants'
 
-export function useTheme() {
+export const useTheme = () => {
   const [theme, setTheme] = useState<Theme>('system')
   const [isMounted, setIsMounted] = useState(false)
 

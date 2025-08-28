@@ -14,11 +14,11 @@ import { ThemeInit } from '@/helpers/theme-init'
 import { ThemeToggle } from '@/components/theme-toggle/theme-toggle'
 import { QuizLayout } from '@/components/layouts/quiz-layout/quiz-layout'
 
-export async function generateStaticParams() {
+export const generateStaticParams = async () => {
   return linguiConfig.locales.map((lang) => ({ lang }))
 }
 
-export async function generateMetadata(props: PageLangParam) {
+export const generateMetadata = async (props: PageLangParam) => {
   const params = await props.params
   const lang = params.lang
   const i18n = getI18nInstance(lang)

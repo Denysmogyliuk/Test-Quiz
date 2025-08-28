@@ -2,12 +2,12 @@ import { i18n, Messages } from '@lingui/core'
 import { useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 
-export async function loadCatalog(locale: string) {
+export const loadCatalog = async (locale: string) => {
   const catalog = await import(`./locales/${locale}.po`)
   return catalog.messages
 }
 
-export function useLinguiInit(messages: Messages) {
+export const useLinguiInit = (messages: Messages) => {
   const isClient = typeof window !== 'undefined'
   const pathname = usePathname()
   const locale = pathname?.split('/')[1] ?? 'en'
