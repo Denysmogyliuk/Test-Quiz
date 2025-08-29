@@ -37,7 +37,7 @@ msgstr "Introduce tu correo electrónico"
 msgid "Enter your email to get full access"
 msgstr "Introduce tu correo para obtener acceso completo"
 
-#: src/screens/verify-screen/verify-screen.tsx:92
+#: src/screens/verify-screen/verify-screen.tsx:91
 msgid "Finding collections for you…"
 msgstr "Buscando colecciones para ti…"
 

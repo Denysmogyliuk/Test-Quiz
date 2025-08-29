@@ -1,15 +1,18 @@
 'use client'
 
 import { parseLabel } from '@/helpers/parse-label'
+import { QuizTypes } from '../types'
 import { useQuizCardContext } from '../quiz-card-context'
 import styles from './bubble-choice.module.css'
-import cn from 'classnames'
+import classNames from 'classnames'
 
 const BubbleChoice: React.FC = () => {
   const { options = [], value, setValue, type } = useQuizCardContext()
 
   const isMultiple =
-    type === 'multiple' || type === 'bubble' || Array.isArray(value)
+    type === QuizTypes.Multiple ||
+    type === QuizTypes.Bubble ||
+    Array.isArray(value)
 
   const handleToggle = (optionValue: string) => {
     if (isMultiple) {
@@ -40,7 +43,7 @@ const BubbleChoice: React.FC = () => {
             key={option.value}
             type="button"
             onClick={() => handleToggle(option.value)}
-            className={cn(
+            className={classNames(
               styles.bubble,
               isSelected(option.value) && styles.selected
             )}

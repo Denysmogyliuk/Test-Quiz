@@ -1,30 +1,33 @@
-import { useContext, useId } from 'react'
+'use client'
+
+import { QuizTypes } from '../types'
+import { useId } from 'react'
+import { useQuizCardContext } from '../quiz-card-context'
 import classNames from 'classnames'
 import styles from './single-choice.module.css'
-import { QuizCardContext } from '../quiz-card-context'
 
 const SingleChoice: React.FC = () => {
-  const context = useContext(QuizCardContext)
+  const { type, options, value, setValue } = useQuizCardContext()
   const id = useId()
 
-  if (!context || context.type !== 'single' || !context.options) return null
+  if (type !== QuizTypes.Single || !options) return null
 
   return (
     <div className={styles.options}>
-      {context.options.map((option) => (
+      {options.map((option) => (
         <label
           key={option.value}
           className={classNames(
             styles.option,
-            context.value === option.value && styles.optionSelected,
+            value === option.value && styles.optionSelected,
             styles.radio
           )}
         >
           <input
             type="radio"
             name={`single-choice-${id}`}
-            checked={context.value === option.value}
-            onChange={() => context.setValue(option.value)}
+            checked={value === option.value}
+            onChange={() => setValue(option.value)}
           />
 
           <span>{option.label}</span>

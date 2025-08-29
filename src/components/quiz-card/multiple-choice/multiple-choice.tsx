@@ -1,27 +1,30 @@
-import { useContext, useId } from 'react'
+'use client'
+
+import { QuizTypes } from '../types'
+import { useId } from 'react'
+import { useQuizCardContext } from '../quiz-card-context'
 import classNames from 'classnames'
 import styles from './multiple-choice.module.css'
-import { QuizCardContext } from '../quiz-card-context'
 
 const MultipleChoice: React.FC = () => {
-  const context = useContext(QuizCardContext)
+  const { type, options, value, setValue } = useQuizCardContext()
   const id = useId()
 
-  if (!context || context.type !== 'multiple' || !context.options) return null
+  if (type !== QuizTypes.Multiple || !options) return null
 
-  const valueArr = Array.isArray(context.value) ? context.value : []
+  const valueArr = Array.isArray(value) ? value : []
 
   const handleToggle = (optionValue: string) => {
     if (valueArr.includes(optionValue)) {
-      context.setValue(valueArr.filter((v) => v !== optionValue))
+      setValue(valueArr.filter((v) => v !== optionValue))
     } else {
-      context.setValue([...valueArr, optionValue])
+      setValue([...valueArr, optionValue])
     }
   }
 
   return (
     <div className={styles.options}>
-      {context.options.map((option) => (
+      {options.map((option) => (
         <label
           key={option.value}
           className={classNames(

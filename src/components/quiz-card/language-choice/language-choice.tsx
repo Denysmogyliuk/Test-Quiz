@@ -10,8 +10,8 @@ import classNames from 'classnames'
 import styles from './language-choice.module.css'
 
 const LanguageChoice: React.FC = () => {
-  const { setValue, value } = useQuizCardContext()
   const router = useRouter()
+  const { setValue, value } = useQuizCardContext()
   const { clearAnswers } = useQuizContext()
 
   const isSelected = (optionValue: string) => {

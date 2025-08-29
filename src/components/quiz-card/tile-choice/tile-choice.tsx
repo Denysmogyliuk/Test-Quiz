@@ -1,9 +1,9 @@
 'use client'
 
-import { useQuizCardContext } from '../quiz-card-context'
-import styles from './tile-choice.module.css'
-import cn from 'classnames'
 import { parseLabel } from '@/helpers/parse-label'
+import { useQuizCardContext } from '../quiz-card-context'
+import classNames from 'classnames'
+import styles from './tile-choice.module.css'
 
 const TileChoice: React.FC = () => {
   const { options = [], value, setValue } = useQuizCardContext()
@@ -25,9 +25,10 @@ const TileChoice: React.FC = () => {
             key={option.value}
             type="button"
             onClick={() => onSelect(option.value)}
-            className={cn(styles.tile, {
-              [styles.tileSelected]: isSelected(option.value),
-            })}
+            className={classNames(
+              styles.tile,
+              isSelected(option.value) && styles.tileSelected
+            )}
           >
             {!!emoji && (
               <span className={styles.tileEmoji} aria-hidden>
